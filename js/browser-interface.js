@@ -6,8 +6,9 @@ $(document).ready(function() {
   $('#findUser').click(function() {
     var user = $('#userName').val();
     $('#userName').val("");
+
+    newUserRepo.getUser(user);
     newUserRepo.getRepos(user);
-    //$('#repoHere').text();
 
   });
 });
