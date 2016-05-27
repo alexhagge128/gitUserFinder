@@ -26,7 +26,7 @@ exports.Repos.prototype.getRepos = function(user) {
   $.get('https://api.github.com/users/' + user + '/repos?access_token=' + apiKey).then(function(response){
 
     response.forEach(function(repo) {
-      $("#repoHere").append("<tr><td>" + repo.name + "</td><td>" + repo.description + "</td></tr>");
+      $("#repoHere").append("<tr><td>" + repo.name + "</td><td>" + repo.description + "</td><td>" + repo.created_at + "</td></tr>");
     });
 
   }).fail(function(error){

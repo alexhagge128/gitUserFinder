@@ -9,8 +9,8 @@
     <title>GitHub User Look Up</title>
   </head>
   <body>
-  <div class="container">
-    <h1>Look up a GitHub User</h1>
+  <div class="container animated bounceInLeft">
+    <h1>GitFinder</h1>
     <label for="userName">Enter a username:</label>
     <input id="userName" type="text">
     <button class="btn-success" id="findUser">Find User</button>
@@ -23,14 +23,15 @@
   <br>
 
   <div class="table responsive">
-    <table class="table table-striped">
+    <table class="table table-striped animated bounceInUp">
       <thead>
         <tr>
           <th>Repository Name</th>
           <th>Description</th>
+          <th>Created At</th>
         </tr>
       </thead>
-      <tbody id="repoHere">
+      <tbody class="animated fadeIn" id="repoHere">
       </tbody>
     </table>
   </div>
