@@ -6,59 +6,16 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Count Dinos</title>
+    <title>GitHub User Look Up</title>
   </head>
-  <body background="img/rockground.jpg">
-    <div class="jumbotron">
-      <h1 class="text-center">Welcome, to Jurasic Park</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-centered text-center boxModel">
-          <h4>Press the Dino DNA button and 1-100 real dino names will generate. You will have 9 chances before being eaten...I mean expelled, from the park.</h4>
-          <br>
-          <form class="form1 animated bounceInLeft" id='form1'>
-            <button class='submit btn btn-primary center-block' type="submit">Create Dino DNA</button>
-          </form>
-        </div>
-      </div>
-      <br>
-      <div class='row'>
-        <div class="col-xs-6 col-centered text-center">
-          <h4 class="boxModel" id="dinoHere"></h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-6 col-centered text-center animated bounceInLeft" id="guessDinos">
-          <form class="form2" id="form2">
-            <label for="dinoInput">How many Dinos?</label>
-            <input type="number" id="dinoInput">
-            <button type="submit">Guess</button>
-          </form>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-xs-6 col-centered text-center'>
-          <h5><p class='boxModel' id="wrongDinoCounter"></p></h5>
-        </div>
-        <div class='col-xs-6 col-centered text-center' id="rightDino">
-          <h3 class='boxModel' class="animated rubberBand" id='dinoResult'></h3>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-xs-6 col-centered text-center' id="gameOver">
-          <h1>Ahh Ahh Ahh</h1>
-          <iframe width="500" height="415" src="https://www.youtube.com/embed/QDySGUFAom0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class='row'></div>
-        <div class="col-xs-6 col-centered text-center">
-          <audio controls>
-            <source src="lol.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </div>
-    </div>
+  <body>
+  <div class="container">
+    <h1>Look up a GitHub User</h1>
+    <label for="userName">Enter a username:</label>
+    <input id="userName" type="text">
+    <button class="btn-success" id="findUser">Find User</button>
+    <div class="showUser"></div>
+  </div>
+</body>
   </body>
 </html>
